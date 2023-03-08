@@ -44,11 +44,12 @@
 		"minifyWXML": true,
 		"disableUseStrict": false,
 		"useCompilerPlugins": false,
-		"useStaticServer": true
+		"useStaticServer": true,
+		"condition": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.19.1",
-	"appid": "",
+	"appid": "wx94b52b57faa760f7",
 	"projectname": "%E9%82%80%E8%AF%B7%E5%87%BD",
 	"condition": {},
 	"srcMiniprogramRoot": "miniprogram/",

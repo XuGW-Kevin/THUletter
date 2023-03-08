@@ -65,19 +65,15 @@ App({
 					})
 				}
 			} else {
-				// 不同模版的云函数服务均共享quickstartFunctions名字
+				// 不同模版的云S函数服务均共享quickstartFunctions名字
 				// 如果你访问部署多个时，会出现此问题，重新部署即可
 				wx.hideLoading()
-				wx.showModal({
-					content: '云函数quickstartFunctions被其他模版覆盖，请更新上传西数后再次体验',
-					showCancel: false
-				})
 			}
     } catch (e) { // 网络问题出现
       console.error('【云函数调用失败】', e.toString())
       wx.hideLoading()
       wx.showModal({
-        content: '请上传cloudfunctions文件夹中的云函数，然后再次体验', // 此提示可以在正式时改为 "网络服务异常，请确认网络重新尝试！"
+        content: '网络服务异常，请确认网络重新尝试！', // 此提示可以在正式时改为 "网络服务异常，请确认网络重新尝试！"
         showCancel: false
       })
     }
